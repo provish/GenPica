@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>GenPica</title>
+
+    <script type="application/javascript" src="https://apis.google.com/js/client:platform.js" async defer></script>
+    <script type="application/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script  type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Vendor Libs CDN -->
+    <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.js"></script>
+    <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.js"></script>
+    <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-animate.js"></script>
+
+    <!-- Custom Scripts -->
+    <script type="application/javascript" src="app.js"></script>
+    <script type="application/javascript" src="js/services/picasaService.js"></script>
+    <script type="application/javascript" src="js/controllers/loginCtrl.js"></script>
+    <script type="application/javascript" src="js/controllers/albumCtrl.js"></script>
+    <script type="application/javascript" src="js/controllers/photosCtrl.js"></script>
+
+</head>
+
+<body ng-app="app_main">
+
+<!-- Include the Header-->
+<div id="header" data-ng-include ="'views/header.html'"></div>
+
+<!-- Compose the body of the App Here-->
+<div id="body">
+    <div ng-view="" class="view-animate">
+
+    </div>
+</div>
+
+<!-- Include the Footer -->
+<div id="footer" data-ng-include="'views/footer.html'"></div>
+
+</body>
+</html>
